@@ -1,0 +1,57 @@
+:root {
+    --bg: #050505;
+    --card-bg: #0d0d0d;
+    --accent: #0088cc; /* TON Blue */
+    --text: #e0e0e0;
+    --dim: #777;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+nav {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1a1a;
+    position: sticky;
+    top: 0;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active { color: var(--accent); }
+
+.container { padding: 80px 10%; }
+
+h1, h2 { letter-spacing: -1px; }
+
+.btn {
+    background: var(--accent);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,136,204,0.3); }
+
+footer { padding: 40px 10%; border-top: 1px solid #1a1a1a; text-align: center; color: var(--dim); font-size: 0.8rem; }
